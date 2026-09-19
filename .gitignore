@@ -1,0 +1,20 @@
+# Binaries
+server.exe
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+bin/
+
+# SQLite databases & temp files
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+test_*.db
+
+# Environment & IDE
+.env
+.idea/
+.vscode/
