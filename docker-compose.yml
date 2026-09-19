@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - DB_PATH=/app/data/lovenest.db
+    volumes:
+      - lovenest_data:/app/data
+    restart: unless-stopped
+
+volumes:
+  lovenest_data:
